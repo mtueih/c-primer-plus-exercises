@@ -18,7 +18,7 @@ S p
 
 ```c
 struct Month {
-	char name[10];
+    char name[10];
     char nameAbbreviation[5];
     unsigned char dayNumber;
     unsigned char number;
@@ -66,7 +66,7 @@ unsigned short dayNumberToMonth(unsigned char month) {
 ```c
 LENS lensArr[10] = {
     ...
-	{ 500, 500 / 2.0, "Remarkata" },	// 第 3 个元素
+    { 500, 500 / 2.0, "Remarkata" },	// 第 3 个元素
     ...
 };
 ```
@@ -75,7 +75,7 @@ LENS lensArr[10] = {
 
 ```c
 LENS lensArr[10] = {
-	[2] = { 500, 500 / 2.0, "Remarkata" }  
+    [2] = { 500, 500 / 2.0, "Remarkata" }  
 };
 ```
 
@@ -162,7 +162,7 @@ strlen(willie.name.fname) + strlen(willie.name.lname);
 
 ```c
 struct car {
-	char name[20];
+    char name[20];
     float horsepower;
     unsigned grade;
     float whellBase;
@@ -193,11 +193,31 @@ struct gas getMPG(struct gas g) {
 
 ```c
 enum choices {
-  	no = 0,
+    no = 0,
     yes = 1,
     maybe = 2
 };
 ```
 
 ## 12.
+
+```c
+char* (*pf)(char*, char);
+```
+
+## 13.
+
+```c
+double function1(double a, double b);
+double function2(double a, double b);
+double function3(double a, double b);
+double function4(double a, double b);
+
+double (*pf[4])(double, double) = {
+  	function1, funtion2, funtion3, funtion4  
+};
+
+*pf[2](10.0, 2.5);
+pf[2](10.0, 2.5);
+```
 
