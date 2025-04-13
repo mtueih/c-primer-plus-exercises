@@ -40,6 +40,7 @@ struct Month months[12] = {
     { "September", "Sept", 30, 9 },
     { "October", "Oct", 31, 10 },
     { "November", "Nov", 30, 11 },
+    { "December", "Dec", 31, 12 }
 };
 ```
 
